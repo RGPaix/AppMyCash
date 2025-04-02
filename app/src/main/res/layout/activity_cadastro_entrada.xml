@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editDescricaoEntrada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descrição da Entrada" />
+
+    <EditText
+        android:id="@+id/editValorEntrada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Valor"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editDataEntrada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Data (DD/MM/AAAA)"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/btnSalvarEntrada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salvar Entrada" />
+
+    <Button
+        android:id="@+id/voltarInicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Voltar" />
+
+</LinearLayout>
