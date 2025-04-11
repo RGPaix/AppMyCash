@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFF4D1"
+    android:background="#FFFAEB"
     android:hapticFeedbackEnabled="true"
     tools:context=".MainActivity">
 
@@ -14,23 +14,57 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
-        android:text="Todas as transações"
+        android:textColor="@color/black"
+        android:fontFamily="@font/lato_black"
         android:textSize="30dp"
+        android:text="Todas as transações:"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/viewTransacoes"
-        android:layout_width="370dp"
-        android:layout_height="491dp"
+        android:layout_width="363dp"
+        android:layout_height="433dp"
         android:layout_marginTop="40dp"
         android:background="@drawable/rounded"
         app:layout_constraintBottom_toTopOf="@+id/buttonVoltar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:layout_constraintVertical_bias="0.02" />
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonApenasEntradas"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/black"
+        android:shadowColor="@color/black"
+        android:fontFamily="@font/lato_regular"
+        android:text="Mostrar só entradas"
+        android:textColorLink="#000000"
+        android:textSize="16dp"
+        app:cornerRadius="20sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="573dp" />
+
+    <Button
+        android:id="@+id/buttonApenasSaidas"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/black"
+        android:shadowColor="@color/black"
+        android:fontFamily="@font/lato_regular"
+        android:text="Mostrar só saídas"
+        android:textColorLink="#000000"
+        android:textSize="16dp"
+        app:cornerRadius="20sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="218dp"
+        tools:layout_editor_absoluteY="573dp" />
 
     <Button
         android:id="@+id/buttonVoltar"
@@ -40,6 +74,7 @@
         android:backgroundTint="@color/black"
         android:shadowColor="@color/black"
         android:text="Voltar"
+        android:fontFamily="@font/lato_regular"
         android:textColorLink="#000000"
         android:textSize="18dp"
         app:cornerRadius="20sp"
