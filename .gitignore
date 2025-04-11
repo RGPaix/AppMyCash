@@ -1,5 +1,8 @@
 *.iml
-.gradle
+/caches/
+/wrapper/dists/
+/wrapper/
+.gradle/
 /local.properties
 /.idea/
 .DS_Store
@@ -17,5 +20,3 @@ captures/
 *.ap_
 *.swp
 **/*.jar
-caches/
-wrapper/dists/
