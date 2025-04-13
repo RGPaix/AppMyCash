@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="6dp"
+    android:background="#4CAF50">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/iconReceita"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            app:srcCompat="@drawable/arrowup"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:contentDescription="Ícone de receita" />
+
+        <TextView
+            android:id="@+id/valorReceita"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="R$ 200,00"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/iconReceita"
+            app:layout_constraintTop_toTopOf="@id/iconReceita"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="16dp" />
+
+        <TextView
+            android:id="@+id/descReceita"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Salário"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/valorReceita"
+            app:layout_constraintTop_toBottomOf="@id/valorReceita"
+            app:layout_constraintEnd_toEndOf="@id/valorReceita"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/dataReceita"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="12/04/2025"
+            android:textSize="16sp"
+            android:textColor="#888888"
+            app:layout_constraintStart_toStartOf="@id/descReceita"
+            app:layout_constraintTop_toBottomOf="@id/descReceita"
+            app:layout_constraintEnd_toEndOf="@id/descReceita"
+            android:layout_marginTop="4dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
